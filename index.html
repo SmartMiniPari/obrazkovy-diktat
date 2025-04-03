@@ -3,16 +3,38 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Obrázkový diktát pre 1. ročník</title>
+    <title>Obrázkový diktát</title>
     <style>
         body {
             font-family: Arial, sans-serif;
             text-align: center;
             margin: 20px;
+            position: relative;
+            background: url('https://source.unsplash.com/1600x900/?moon,craters') no-repeat center center fixed;
+            background-size: cover;
+            color: white;
+            overflow: auto;
+        }
+        h1 {
+            color: blue;
+            border: 3px solid black;
+            display: inline-block;
+            padding: 10px;
+            border-radius: 5px;
+            background-color: rgba(255, 255, 255, 0.2);
+            animation: pulse 1.5s infinite alternate;
+        }
+        @keyframes pulse {
+            0% { transform: scale(1); }
+            100% { transform: scale(1.1); }
         }
         .dictation {
             max-width: 600px;
             margin: auto;
+            background: rgba(0, 0, 0, 0.7);
+            padding: 20px;
+            border-radius: 10px;
+            position: relative;
         }
         .item {
             margin: 20px 0;
@@ -20,6 +42,13 @@
             border: 1px solid #ddd;
             border-radius: 5px;
             background: #f9f9f9;
+            color: black;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            position: relative;
+        }
+        .item:hover {
+            transform: scale(1.05);
+            box-shadow: 0px 4px 10px rgba(255, 255, 255, 0.5);
         }
         button {
             padding: 10px;
@@ -29,28 +58,38 @@
             border: none;
             cursor: pointer;
             border-radius: 5px;
+            transition: transform 0.3s ease;
+            position: relative;
+        }
+        button:hover {
+            transform: translateY(-5px);
         }
     </style>
 </head>
 <body>
-    <h1>Obrázkový diktát pre 1. ročník ZŠ</h1>
+    <h1>Obrázkový diktát</h1>
     <p>Vyber si diktát a stiahni si ho.</p>
     
     <div class="dictation">
         <div class="item">
-            <h2>Diktát 1</h2>
-            <p>Jednoduchý obrázkový diktát.</p>
+            <h2>DIKTÁT - HOCIAKÉ PÍSMENÁ</h2>
             <button onclick="window.location.href='https://drive.google.com/uc?export=download&id=1ySPmsVc2Y_D20xDXekMqU9bmIC_CQDbd'">Stiahnuť</button>
         </div>
         <div class="item">
-            <h2>Diktát 2</h2>
-            <p>Stredne náročný obrázkový diktát.</p>
-            <button onclick="window.location.href='https://drive.google.com/uc?export=download&id=1ySPmsVc2Y_D20xDXekMqU9bmIC_CQDbd'">Stiahnuť</button>
+            <h2>DIKTÁT - L</h2>
+            <button onclick="window.location.href='https://drive.google.com/uc?export=download&id=1pMoE7ktEc1Ingk7Thp4Vcf_trTmIHDdt'">Stiahnuť</button>
         </div>
         <div class="item">
-            <h2>Diktát 3</h2>
-            <p>Pokročilý obrázkový diktát.</p>
-           <button onclick="window.location.href='https://drive.google.com/uc?export=download&id=1ySPmsVc2Y_D20xDXekMqU9bmIC_CQDbd'">Stiahnuť</button>
+            <h2>DIKTÁT - M</h2>
+            <button onclick="window.location.href='https://drive.google.com/uc?export=download&id=YOUR_FILE_ID'">Stiahnuť</button>
+        </div>
+        <div class="item">
+            <h2>DIKTÁT - P</h2>
+            <button onclick="window.location.href='https://drive.google.com/uc?export=download&id=YOUR_FILE_ID'">Stiahnuť</button>
+        </div>
+        <div class="item">
+            <h2>DIKTÁT - Z</h2>
+            <button onclick="window.location.href='https://drive.google.com/uc?export=download&id=YOUR_FILE_ID'">Stiahnuť</button>
         </div>
     </div>
 
